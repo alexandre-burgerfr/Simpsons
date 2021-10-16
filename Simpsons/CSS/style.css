@@ -1,0 +1,180 @@
+/* ctrl+/ pour mettre la balise commentaire */
+/* Corps du document */
+body{
+    background-color:rgb(255,217,15);
+  
+}
+/* Conteneur principal */
+#wrapper {
+    margin:auto;
+    width:70%;
+    
+}
+/* Titres */
+h1{
+    text-align: center;
+    color: white;
+    background-color:rgb(21,113,194);
+}
+h2{
+    color: rgb(255,217,15);
+    margin: 12px auto;
+    font-size: xx-large;
+}
+h3{
+    text-align: center;
+    padding: 0.5em;
+}
+
+main {
+    display: flex;
+    width: 100%;
+    background-color: white;
+    padding: 2em 1em;
+}
+
+nav{
+    width: 18%;
+    padding: 1em;
+    text-align: center;
+    background-color: rgb(21,113,194);
+    display: flex;
+    flex-direction: column;
+    color: white;
+    height:fit-content;
+}
+
+a {
+    color: white;
+    padding: 5px;
+}
+
+article{
+    width: 68%;
+    padding: 1em;
+    background-color: white;
+    font-size: large;
+}
+article p, aside p{
+    text-align: justify;
+}
+
+aside{
+    width: 18%; 
+    padding: 10px;
+    background-color: rgb(21,113,194);
+    color: white;
+}
+
+img{
+    width: 100%;
+}
+
+footer{
+    text-align: center;
+    background-color: rgb(8, 20, 126);
+    color: white;
+    padding: 0.2em;
+}
+figure{
+    height: auto;
+}
+.header_figure{
+    height: 450px;
+}
+.image{
+    width: 80%;
+    margin: auto;
+    
+}
+.canape{
+    height: 450px;
+    object-fit:cover;
+}
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+.matt{
+    border: 2px solid white;
+}
+@media screen and (max-width: 421px){
+    main{
+        flex-direction: column;
+    }
+    #wrapper{
+        width: 100%;
+    }
+    aside{
+        width: 100%;
+    }
+    article{
+        width: 100%;
+    }
+    nav{
+        width: 100%;
+    }
+    .header_figure{
+        height: auto;
+    }
+    .canape{
+        height: auto;
+    }
+    .article{
+        padding: 1em;
+    }
+}
+@media screen and (min-width: 422px) and (max-width:767px){
+    main{
+        flex-direction: column;
+    }
+    #wrapper{
+        width: 100%;
+    }
+    aside{
+        width: 100%;
+    }
+    article{
+        width: 100%;
+    }
+    nav{
+        width: 100%;
+    }
+    .header_figure{
+        height: auto;
+    }
+    .canape{
+        height: auto;
+    }
+}
+@media screen and ( min-width:768px) and (max-width:1024px) {
+    main{
+        display: flex;
+        flex-direction: column;
+
+    }
+    nav{
+        width: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    #wrapper{
+        width: auto;
+    }
+    article{
+        width: 100%;
+    }
+    aside{
+        align-self: center;
+        width: 100%;
+        display: flex;
+    }
+    .article{
+        padding: 1em;
+        font-size: 22px;
+    }
+    h3{
+        text-align: left;
+    }
+}
